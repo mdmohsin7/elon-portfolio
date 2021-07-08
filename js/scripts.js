@@ -143,20 +143,4 @@
 			queue: false
 		}
 	});
-
-	$('.works-filter li a').on('click', function (e) {
-		$('.works-filter li a.current').removeClass('current');
-		$(this).addClass('current');
-
-		var selector = $(this).attr('data-filter');
-		$container.isotope({
-			filter: selector,
-			animationOptions: {
-				duration: 750,
-				easing: 'linear',
-				queue: false
-			}
-		});
-		return false;
-	});
 })(jQuery);
